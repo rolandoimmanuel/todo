@@ -13,3 +13,16 @@ urlpatterns = [
     # Delete task
     path('delete_task/<int:pk>/', views.delete_task, name='delete_task'),
 ]
+
+# urls.py
+
+from django.urls import path
+from .views import input_view, search_view
+
+urlpatterns = [
+    path('input/', input_view, name='input_view'),
+    path('search/', search_view, name='search_view'),
+]
+
+# urls.py
+

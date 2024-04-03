@@ -40,3 +40,5 @@ def delete_task(request, pk):
     task = get_object_or_404(Task, pk=pk)
     task.delete()
     return redirect('home')
+
+# views.py
