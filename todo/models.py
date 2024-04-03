@@ -8,3 +8,10 @@ class Task(models.Model):
 
     def __str__(self):
         return self.task
+
+# models.py
+
+
+
+class PreviousInput(models.Model):
+    input_text = models.CharField(max_length=100)
